@@ -17,6 +17,14 @@ public class Matrix {
         }
     }
 
+    public void fill_systematically() {
+        for (int i = 0; i < this.size; i++) {
+            for (int j = 0; j < this.size; j++) {
+                this.arr[i][j] = i * size + j;
+            }
+        }
+    }
+
     public int getSize() {
         return size;
     }

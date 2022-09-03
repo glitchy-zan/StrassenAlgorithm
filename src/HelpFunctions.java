@@ -97,4 +97,14 @@ public class HelpFunctions {
             System.out.println();
         }
     }
+
+    public int[] matrixToArray(Matrix m) {
+        int[] arr = new int[m.getSize() * m.getSize()];
+        for (int i = 0; i < m.getSize(); i++) {
+            for (int j = 0; j < m.getSize(); j++) {
+                arr[i * m.getSize() + j] = m.getArr()[i][j];
+            }
+        }
+        return arr;
+    }
 }
